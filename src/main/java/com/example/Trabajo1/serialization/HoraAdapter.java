@@ -2,8 +2,8 @@ package com.example.Trabajo1.serialization;
 
 import com.example.Trabajo1.time.Hora;
 import com.google.gson.*;
-
 import java.lang.reflect.Type;
+
 
 public class HoraAdapter implements JsonSerializer<Hora>, JsonDeserializer<Hora> {
     @Override

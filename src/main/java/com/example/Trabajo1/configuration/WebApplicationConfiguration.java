@@ -23,4 +23,6 @@ public class WebApplicationConfiguration implements WebMvcConfigurer {
         converters.add(messageConverter);
 
     }
+
+
 }

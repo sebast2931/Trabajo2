@@ -6,6 +6,7 @@ import com.google.gson.*;
 import java.lang.reflect.Type;
 
 public class MinutosAdapter implements JsonSerializer<Minutos>, JsonDeserializer<Minutos> {
+
     @Override
     public Minutos deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
         Integer value = jsonElement.getAsInt();

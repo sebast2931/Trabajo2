@@ -1,10 +1,11 @@
 package com.example.Trabajo1.time;
 
 import com.example.Trabajo1.common.Preconditions;
+import com.example.Trabajo1.serialization.ValueSerializer;
 import lombok.Value;
 
 @Value(staticConstructor = "of")
-public class Hora {
+public class Hora implements ValueSerializer {
 
     private final Integer value;
 
@@ -14,4 +15,8 @@ public class Hora {
         this.value = value;
     }
 
+    @Override
+    public Integer valueOf() {
+        return value;
+    }
 }
